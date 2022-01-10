@@ -4,18 +4,20 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import {FormularioVisitaModule} from "./formulario-visita/formulario-visita.module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [ 
-    MbscModule, 
+  imports: [
+    MbscModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    FormularioVisitaModule
   ],
   bootstrap: [AppComponent]
 })
