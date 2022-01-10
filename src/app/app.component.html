@@ -1,4 +1,9 @@
 <div class="md-switching-view-cont">
+  <app-encabezado></app-encabezado>
+  <app-formulario-visita></app-formulario-visita>
+  <app-datos-personales></app-datos-personales>
+  <app-disponibilidad></app-disponibilidad>
+  <app-referencia></app-referencia>
    <mbsc-eventcalendar [data]="myEvents" [view]="calView" [headerTemplate]="customTemplate">
     <ng-template #customTemplate>
       <mbsc-calendar-nav class="cal-header-nav"></mbsc-calendar-nav>
@@ -13,5 +18,5 @@
       <mbsc-calendar-next class="cal-header-next"></mbsc-calendar-next>
     </ng-template>
   </mbsc-eventcalendar>
-<app-formulario-visita></app-formulario-visita>
+
 </div>
